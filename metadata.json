@@ -1,0 +1,27 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v2",
+  "name": "Push to SolidCraft",
+  "description": "One toolbar button sends the board to SolidCraft: mask, silkscreen, traces, pads and 3D parts, in a new tab.",
+  "description_full": "A button in the board editor that saves the board and opens it in SolidCraft (an open-source parametric CAD program) in about 8 seconds, the way Eagle could push a board to Fusion. The board comes in looking like the real thing: solder mask, silkscreen, top and bottom copper, pads, holes and every component with a 3D model. Everything but the bare board is light display geometry, so the board stays quick to work with inside a larger mechanical design. It also writes a single 3MF copy with every colour for dropping into other designs.\n\nOne way only: nothing comes back to KiCad.\n\nNeeds SolidCraft 0.18.3 or later and the solidcraft-kicad converter (https://github.com/fpoussin/solidcraft-kicad), with kicad-cli on the PATH. Tested on Linux; macOS and Windows untested.",
+  "identifier": "com.github.xeno-va.pushtosolidcraft",
+  "type": "plugin",
+  "author": {
+    "name": "Xeno-va",
+    "contact": {
+      "github": "https://github.com/Xeno-va"
+    }
+  },
+  "license": "MIT",
+  "resources": {
+    "homepage": "https://github.com/Xeno-va/PushToSolidCraft"
+  },
+  "tags": ["mcad", "mechanical", "export", "solidcraft"],
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "stable",
+      "kicad_version": "10.0",
+      "runtime": "swig"
+    }
+  ]
+}
