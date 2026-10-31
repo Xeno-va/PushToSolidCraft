@@ -7,6 +7,8 @@ every component with a 3D model. One way only: nothing comes back to KiCad.
 
 **Works on Linux** (built and tested there). macOS and Windows are untested.
 
+![The Push to SolidCraft button at the right end of KiCad's top toolbar](docs/toolbar-button.png)
+
 The board, traces, mask and silkscreen are light display surfaces, not solid bodies, so a board
 stays quick to work with when it is a small part of a larger mechanical design. Only the bare
 board is a true solid you can measure and attach to.
@@ -50,8 +52,9 @@ cd PushToSolidCraft
 ./install.sh
 ```
 
-Restart the board editor. The button is the green board with a blue arrow, at the right end of
-the top toolbar.
+Restart the board editor. The button is the small green board with a blue arrow, the last
+icon at the right end of the top toolbar (marked in red in the picture above). If you also
+have other plugins installed, it sits among their icons in that same group.
 
 The programs are found on the PATH, then in usual install folders (`~/Applications`, an
 extracted SolidCraft in `~/.local/share/solidcraft-*`). To point at them directly, set
